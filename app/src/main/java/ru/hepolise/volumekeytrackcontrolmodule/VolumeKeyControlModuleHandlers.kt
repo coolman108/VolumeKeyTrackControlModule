@@ -61,12 +61,12 @@ object VolumeKeyControlModuleHandlers {
                 VOLUME_UP_LONG_PRESS to Runnable {
                     log("sending next")
                     isLongPress = true
-                    sendMediaButtonEventAndTriggerVibration(KeyEvent.KEYCODE_MEDIA_NEXT)
+                    sendMediaButtonEventAndTriggerVibration(KeyEvent.KEYCODE_CAMERA)
                 },
                 VOLUME_DOWN_LONG_PRESS to Runnable {
                     log("sending prev")
                     isLongPress = true
-                    sendMediaButtonEventAndTriggerVibration(KeyEvent.KEYCODE_MEDIA_PREVIOUS)
+                    sendMediaButtonEventAndTriggerVibration(KeyEvent.KEYCODE_CAMERA)
                 },
                 VOLUME_BOTH_LONG_PRESS to Runnable {
                     if (isUpPressed && isDownPressed) {
